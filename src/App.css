@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url("./Fonts.css");
+@import url("./Effects.css");
+
+.info-container {
+  width: auto;
+  margin-top: 15vw;
+  margin-left: 12vw;
+  float: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.picture-container {
+  margin-top: 2%;
+  float: left;
+  width: 45%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.icon {
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+
+.icon-github {
+  color: black;
+}
+
+.icon-linkedin {
+  color: #1900ff;
+}
+
+.main-title {
+  margin: 0;
+  font-family: "roboto-mono-regular";
+  font-size: 5vw;
+}
+
+.sub-title {
+  margin: 0;
+  font-family: "roboto-mono-thin";
+  font-size: 2.5vw;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .info-container {
+    margin-top: 8vw;
+    margin-left: 8vw;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .picture-container {
+    width: auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .main-title {
+    font-size: 10vw;
+  }
+  
+  .sub-title {
+    font-size: 5vw;
   }
 }
